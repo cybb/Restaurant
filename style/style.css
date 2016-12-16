@@ -1,0 +1,127 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+a{
+	display: block;
+	text-decoration: none;
+}
+.header--background {
+	background-color: #c8000b;
+}
+.header-logo{
+	text-align: center;
+	background-color: #c8000b;
+}
+.header--strip{
+	color: #fff;
+	text-align: center;
+ background-color: #000;
+	position: relative;
+	padding: 10px; 
+	z-index: 999;
+
+}
+.header--strip::after{
+	content:' ';
+	display: block;
+	width: 100%;
+	height: 8px;
+	background:  url(../images/bg-1.png) repeat-x;
+	position: absolute;
+ bottom: -7px;
+	left: 0; 
+}
+.header-nav{
+	padding: 0;
+}
+.header-menu li{
+	display: inline-block;
+	width: 16.66%; 
+	position: relative;
+	 
+} 
+.header-menu a{
+	padding: 32% 19% 12%;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+.header-menu li::before,
+.header-menu li::after{
+	display: block;
+	content: '';
+	position: absolute;
+	bottom: -30px;
+	width: 0;
+height: 0;
+border-style: solid;
+border-width: 30px 80px 0 0;
+border-color: #c8000b transparent transparent transparent; 
+	 
+}
+.header-menu li::after{
+right: 0;
+border-style: solid;
+border-width: 0 80px 30px 0;
+border-color:  transparent  #c8000b transparent transparent; 
+}
+
+
+ .header-li--second{
+	background-color: #be0a0a;
+}
+
+.header-li--second::before{
+border-color:  transparent  #be0a0a transparent transparent; 
+}
+ 
+ .header-li--second::after{
+	border-color: #be0a0a transparent transparent transparent; 
+}
+
+
+/*3*/
+
+
+.header-menu li:nth-child(3){
+	background-color: #a00000;
+}
+
+.header-menu li:nth-child(3)::after{
+border-color:  transparent  #a00000 transparent transparent; 
+}
+ 
+.header-menu li:nth-child(3)::before{
+	border-color: #a00000 transparent transparent transparent; 
+}
+
+
+/*4*/
+
+ class="header-li--first"{
+	background-color: #a00000;
+}
+
+.header-menu li:nth-child(4)::after{
+border-color:  transparent  #a00000 transparent transparent; 
+}
+ 
+.header-menu li:nth-child(4)::before{
+	border-color: #a00000 transparent transparent transparent; 
+}
+
+/*5*/
+
+.header-menu li:nth-child(2)::after{
+border-color:  transparent  #be0a0a transparent transparent; 
+}
+ 
+.header-menu li:nth-child(2){
+	border-color: #be0a0a transparent transparent transparent; 
+}
+  
