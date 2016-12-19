@@ -7,13 +7,27 @@
 .header-menu li::after {
   display: none; 
 }
-
+.slider { 
+  width: 820px;
+  height: 300px; 
+}
+ 
+.slider ul li { 
+  width: 820px;
+  height: 300px;
+} 
+.slider li img {
+  width: inherit; 
+}
   .wrapper{
     width: 820px; 
   } 
   .features-list li { 
   width: 25%; 
 } 
+  .main-footer {
+  width: 820px; 
+}
 }
 
 @media screen and (max-width:490px){
@@ -72,7 +86,12 @@
 .features-list li:nth-child(5) {
   margin: 0;
 }
-
+.footer-customer,
+.footer-location,
+.footer-opentime { 
+  width: 95%;
+   
+}
 
 
 
