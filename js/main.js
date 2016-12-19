@@ -10,9 +10,16 @@
    $(this).addClass("slider"+$(this).index());
   });
   $(obj).find("span").first().addClass("on"); // делаем активным первый элемент меню
+		
+//		var size_window = $(window).width();
+//		$(obj).find("li").css('width': size_window);
  });
  
-	 
+//	function resize_window(){
+//		var size_window = $(".slider-wrap").width();
+//		$(".slider li").css('width':size_window);
+//		
+//	}  
 	 
 	 
 function sliderJS (obj, sl) { // slider function
@@ -21,6 +28,7 @@ function sliderJS (obj, sl) { // slider function
  var step = $(bl).width(); // ширина объекта
  $(ul).animate({marginLeft: "-"+step*obj}, 1500); // 500 это скорость перемотки
 }
+		
 $(document).on("click", ".slider .nav span", function() { // slider click navigate
  var sl = $(this).closest(".slider"); // находим, в каком блоке был клик
  $(sl).find("span").removeClass("on"); // убираем активный элемент

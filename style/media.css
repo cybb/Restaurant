@@ -1,40 +1,55 @@
-@media screen and (max-width:860px){ 
+@media screen and (max-width:880px){ 
   
 .header-menu li { 
   width: 25%; 
 }
+	.header-menu a {
+  padding: 15% 0;
+   
+}
+	.header-menu a:hover { 
+ background-color: rgba(230, 5, 5, 0.38); 
+}
 .header-menu li::before,
 .header-menu li::after {
   display: none; 
-}
-.slider { 
-  width: 820px;
-  height: 300px; 
-}
- 
-.slider ul li { 
-  width: 820px;
-  height: 300px;
 } 
-.slider li img {
-  width: inherit; 
+	.slider { 
+  height: 400px; 
 }
-  .wrapper{
-    width: 820px; 
-  } 
+	.slider ul li { 
+  height: 400px;
+}
+	slider li img {
+  width: 80%;
+}
   .features-list li { 
   width: 25%; 
+}  
+	.footer-customer,
+.footer-location,
+.footer-opentime { 
+  width: 32%;
+	margin: 0;
+   
+}
+}
+@media screen and (max-width:580px){
+	.contact-phone{
+		display: block;
+	}
 } 
-  .main-footer {
-  width: 820px; 
-}
-}
+
 
 @media screen and (max-width:490px){
-  
+	.header-logo img{
+		width: 50%;
+		overflow: hidden;
+	}
   .social-links {
   width: 170px; 
   top: 10px;
+		display: block;
 }
  .social-links a { 
   width: 30px;
@@ -53,25 +68,13 @@
 .contact-phone { 
   padding: 5px 0 0 30px;
   font-size: .8em;
-}
-  .slider { 
-  width: 470px;
-  height: 300px; 
-}
- 
-.slider ul li { 
-  width: 470px;
-  height: 300px;
 } 
-.slider li img {
-  width: inherit;
-  height: 100%;
+	.header-menu a {
+   
+  font-size: .7rem;
 }
-  .wrapper{
-    width: 450px; 
-  } 
-  .main-footer {
-  width: 450px; 
+	.slider li img {
+  width: 70%;
 }
   .features-list li { 
   width: 90%; 
@@ -80,19 +83,33 @@
   padding: 3px;
   width: 70%;
   margin-left: 29%;  
-    
   }
 .features-list li:nth-child(2),
 .features-list li:nth-child(5) {
   margin: 0;
 }
+	.features-ribble {
+  
+  padding: 2%;
+  background-color: #c9000b;
+  top: 5%;
+  left: 1%;
+  z-index: 999;
+  color: #fff;
+  text-align: center;
+}
 .footer-customer,
 .footer-location,
 .footer-opentime { 
-  width: 95%;
+  width: 95%; 
+	margin: 0 auto;
+}
+.footer-copyright p {
+  display: block;
+	width: 100%;
+	text-align: center;
    
 }
-
 
 
 
